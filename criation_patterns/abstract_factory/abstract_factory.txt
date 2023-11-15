@@ -1,0 +1,7 @@
+definição
+    Fornecer uma interface para criação de famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+
+lógica
+     No factory method constroi apenas um criamos uma instancia de um fabrica apartir de uma classe abstrata de uma fabrica, além disso temos um classe abstrata de produto e esse produto tem varias classes concretas especificas e a fabrica irá nos retornar instancias dessas classes.
+    No abstract factory, ao contrário do factory que só tem um método de retorno das instancias, podemos ter mais de um método na "fábrica concreta" que pode retornar vários tipos de produtos concertos, dai vem a ideia de família de objetos relacionados, aos invés de criar uma fábrica para cada objeto podemos criar uma fábrica que "produzir" diferentes tipo de objetos, porém esses objetos estão todos relacionados entre si.
+    imagine que estamos programando um programa de inteface grafica que é multiplataformas, assim quando o usuario estiver usando uma plataforma você quer que essa plataforma tenha todos as caracteristicas dessa plataforma, assim podemos definir uma fabrica para uma plataforma que retorna os objetos relacionados a uma plataforma especifica, ou seja, esses objetos são de uma "familia" em comum.
