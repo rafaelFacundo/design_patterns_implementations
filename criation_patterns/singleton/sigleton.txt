@@ -1,0 +1,10 @@
+definição 
+    Garantir que uma classe tenha somente uma instância e fornecer um ponto global de acesso para a mesma, ou seja, com o singleton não vamos instanciar uma classe duas vezes ou mais, apenas uma vez e quando precisamos usar, iremos nos referir à mesma instancia. 
+
+-> Vale lembrar que o padrão é feito para ser impossível instanciar uma outra classe caso necessário. deste modo chegamos em alguns contras em usar esse padrão, o primeiro deles é que não temos certeza se vamos precisar de apenas uma classe no futuro, podemos precisar de outra e caso isso aconteça teremos grandes problemas, pois o padrão é pensando para que não seja possível instanciar uma outra classe. Além disso, quando a equipe de teste quiser testar a aplicação, podem ocorrer grandes dificuldades, porque os testadores muitas vezes precisam testar a aplicação com dados falsos para testes, assim caso eles quisessem criar uma classe com dados estáticos não seria possível pois o padrão não permite isso.
+
+-> Em uma classe singleton o construtor é privado, ou seja, apenas uma classe singleton pode instanciar uma classse singleton, mas perai kk como a gente consegue criar uma classe se o contrutor é privado ? Bom, é ai que os métodos estáticos vão entrar em cena.
+
+vamos para implementação para compreender melhor sobre esse padrão.
+
+
