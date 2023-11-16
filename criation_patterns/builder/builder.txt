@@ -1,0 +1,6 @@
+definição
+
+    Separar a construção de um objeto complexo da sua representação de modo que o
+mesmo processo de construção possa criar diferentes representações
+
+ imagine que você quer criar um construtor para uma classe usuário do seu sistema, mas esse construtor pode ter vários parametros e assim fica uma função bem carregada e dificil de ser chamada pelo código, assim como a definição já diz, podemos separar a construção do objeto usuário, criando um Builder que irá construir a nossa classe com os parâmetros necessários.
