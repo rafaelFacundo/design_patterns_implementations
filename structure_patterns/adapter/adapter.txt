@@ -1,0 +1,26 @@
+PADRÃO “ADAPTER”
+
+	Vamos começar com uma situação do cotidiano, imagine que você vai morar em uma nova casa, mas ao chegar lá percebe que as tomadas da casa são todas de apenas dois pinos, porém todos os seus equipamentos eletrônicos tem tomadas de 3 pinos, você tem duas opções para resolver esse problema, primeiro você pode pagar um eletricista para mudar todas as tomadas da casa, entretanto isso não seria tão bom porque talvez iria mudar toda a estrutura elétrica da casa e a fiação, a outra opção, bem mais fácil, seria comprar um adaptador para cada tomada e toda vez que você for usar um aparelho você liga ele no adaptador e então conecta o adaptador na tomada. Ou seja, o adaptador está desempenhando um papel de “fazer a comunicação” entre dois sistemas que são incompatíveis nas saídas, no caso, os seus eletrodomésticos e o sistema elétrico da casa.
+	Agora falando de um exemplo mais dentro do desenvolvimento de software imagine que você desenvolveu o novo Paint e nele você programou os vários formatos de desenhos que podemos fazer com uma classe abstrata chamada Shape e cada forma de desenho herda dessa classe e então especializa o método, por exemplo, a classe linha herda da classe Shape e cria a classe LineShape que então implementa o método que permite o usuário desenhar uma linha.
+	Entretanto, seu editor não possui uma classe para editar textos e você quer colocar essa funcionalidade para deixar o seu programa mais completo, porém você sabe que tem outro programa que disponibiliza essa funcionalidade separadamente e você pode pegar para incorporar no seu sistema, porém essa funcionalidade não foi desenvolvida a partir da classe Shape, uma vez que, obviamente, não foi você que fez ela.
+	Deste modo, você terá que adaptar a classe do outro programa a sua classe Shape, por exemplo, você poderia criar uma classe TextShape que iria adaptar o editor de texto do outro programa às suas funcionalidades, você poderia fazer isso de duas formas:
+Herdando a classe Shape e a classe do editor de texto do outro programa
+Compondo uma classe com a classe do outro programa dentro da TextShape e escrevendo a text shape em termo da classe de fora.
+As figuras abaixo mostram isso:
+
+
+Quando usamos esse padrão ? 
+Quando queremos utilizar uma classe existente, mas a interface dela não “combina muito” com o que queremos
+Quando queremos criar classes para serem reutilizadas ou classes que não são muito esperadas de existirem, ou seja, classes que não necessariamente possuem interfaces compatíveis
+Quando queremos utilizar várias subclasses existentes e ao invés de adaptar cada uma delas, podemos criar apenas um adapter para o pai delas.
+
+
+Quem são os participantes ? 
+Target
+A interface do domínio específico que o cliente usa
+Client
+Adaptee 
+É a classe ou interface que será adaptada para ser usada no sistema
+Adapter
+É a classe que adapta o ADAPTEE para ser usado no TARGET
+
