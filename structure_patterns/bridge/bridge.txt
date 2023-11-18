@@ -1,0 +1,6 @@
+PADRÃO “BRIDGE”
+
+	
+	“Desconecta” uma abstração da sua implementação para que as duas possam variar independentemente.
+	Quando queremos fazer várias formas de implementação de uma abstração, a maneira mais comum é usar uma classe abstrata e as implementações específicas herdaram dessa classe abstrata. Porém, essa abordagem “amarra” a implementação à abstração para sempre, não sendo mais possível utilizar nenhuma das duas de maneira independente
+
