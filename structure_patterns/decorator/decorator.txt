@@ -1,0 +1,4 @@
+padrão decorator
+
+Dinamicamente, agregar responsabilidades adicionais a um objeto. Os Decorators
+fornecem uma alternativa flexível ao uso de subclasses para extensão de funcionalidades
